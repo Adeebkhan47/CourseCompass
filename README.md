@@ -68,13 +68,12 @@ CourseCompass/
 ├── scripts/
 │   ├── prepare_data.py      # Automated download & preprocessing script
 │   ├── verify_system.py     # 9-point end-to-end automated verification test suite
-│   ├── generate_report.py   # Generates REPORT.md and TECHNICAL_REPORT.pdf
 │   ├── test_rules.py        # Rule exploration utility
 │   └── inspect_data.py      # Dataset inspection utility
 ├── app.py                   # Streamlit web application
 ├── requirements.txt         # Project dependencies
-├── REPORT.md                # Comprehensive Markdown technical report
-├── TECHNICAL_REPORT.pdf     # Publication-grade ReportLab PDF technical report
+├── REPORT.md                # Earlier Markdown draft
+├── TECHNICAL_REPORT.docx   # Final Word technical report
 └── README.md                # Documentation and run instructions
 ```
 
@@ -163,14 +162,10 @@ Expected output:
 
 ## 📄 Technical Report
 
-Per Assignment Section 8 guidelines, the technical report is available in two formats:
-- **Markdown:** [`REPORT.md`](REPORT.md)
-- **Formatted PDF:** [`TECHNICAL_REPORT.pdf`](TECHNICAL_REPORT.pdf)
+Per Assignment Section 8 guidelines, the final technical report is available as a Word document:
+- **Word:** [`TECHNICAL_REPORT.docx`](TECHNICAL_REPORT.docx)
 
-To regenerate both reports from code:
-```bash
-py scripts/generate_report.py
-```
+`REPORT.md` is the earlier Markdown draft.
 
 ---
 
