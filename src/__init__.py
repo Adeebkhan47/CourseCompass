@@ -1,0 +1,1 @@
+"""CourseCompass package initialization."""
