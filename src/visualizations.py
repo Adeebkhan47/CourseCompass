@@ -19,21 +19,21 @@ from typing import List, Dict, Any, Optional
 PALETTE = {
     "bg": "#0E1117",
     "card_bg": "#1E222D",
-    "primary": "#4F46E5",     # Indigo
-    "secondary": "#06B6D4",   # Cyan
-    "accent": "#F59E0B",      # Amber
-    "text": "#F3F4F6",        # Light grey
-    "muted": "#9CA3AF",       # Medium grey
-    "edge_positive": "#10B981", # Emerald
-    "edge_high": "#EC4899"     # Pink
+    "primary": "#4F46E5",     
+    "secondary": "#06B6D4",   
+    "accent": "#F59E0B",      
+    "text": "#F3F4F6",        
+    "muted": "#9CA3AF",       
+    "edge_positive": "#10B981", 
+    "edge_high": "#EC4899"     
 }
 
 FIELD_COLORS = {
-    "Computer Science & Programming": "#3B82F6",    # Blue
-    "Philosophy, Law & Ethics": "#8B5CF6",          # Violet
-    "Humanities & Classical Literature": "#EC4899", # Pink
-    "Public Health, Biostatistics & Epidemiology": "#10B981", # Emerald
-    "Public Health & Environmental Sciences": "#F59E0B"       # Amber
+    "Computer Science & Programming": "#3B82F6",    
+    "Philosophy, Law & Ethics": "#8B5CF6",          
+    "Humanities & Classical Literature": "#EC4899", 
+    "Public Health, Biostatistics & Epidemiology": "#10B981", 
+    "Public Health & Environmental Sciences": "#F59E0B"       
 }
 
 def plot_association_graph(
@@ -41,13 +41,7 @@ def plot_association_graph(
     top_n: int = 15,
     min_confidence: float = 0.2
 ) -> plt.Figure:
-    """
-    Constructs a directed Association Network Graph where:
-    - Nodes represent courses
-    - Directed edges represent association rules (A -> B)
-    - Edge thickness represents confidence
-    - Edge color represents lift
-    """
+   
     fig, ax = plt.subplots(figsize=(10, 7), facecolor='#0E1117')
     ax.set_facecolor('#0E1117')
 
@@ -151,7 +145,7 @@ def plot_association_graph(
         alpha=0.8
     )
 
-    ax.set_title("Course Association Network Graph (Directed Rules: A → B)",
+    ax.set_title("Course Association Network Graph",
                  color='#F3F4F6', fontsize=14, fontweight='bold', pad=15)
     ax.axis('off')
 

@@ -1,11 +1,9 @@
 """
 prepare_data.py
 Script to prepare and preprocess the HarvardX Person-Course dataset for CourseCompass.
-Supports both the local dataset (HXPC13_DI_v3_11-13-2019.csv) and automatic download from Harvard Dataverse.
 """
 
 import os
-import sys
 import urllib.request
 import pandas as pd
 
@@ -13,9 +11,6 @@ DATA_DIR = "Dataset"
 RAW_FILENAME = "HXPC13_DI_v3_11-13-2019.csv"
 CLEANED_FILENAME = "cleaned_course_enrollments.csv"
 BASKETS_FILENAME = "learner_baskets.csv"
-
-# Official Harvard Dataverse persistent identifier & direct download URL
-DATAVERSE_URL = "https://dataverse.harvard.edu/api/access/datafile/3624095"
 
 COURSE_METADATA = {
     "HarvardX/CB22x/2013_Spring": {

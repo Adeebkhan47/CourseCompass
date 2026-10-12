@@ -1,8 +1,21 @@
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
 import os
+import sys
 
-data_path = os.path.join("Dataset", "HXPC13_DI_v3_11-13-2019.csv")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+CANDIDATE_PATHS = [
+    os.path.join(BASE_DIR, "Dataset", "Raw Data", "HXPC13_DI_v3_11-13-2019.csv"),
+    os.path.join(BASE_DIR, "Dataset", "HXPC13_DI_v3_11-13-2019.csv"),
+    os.path.join("Dataset", "Raw Data", "HXPC13_DI_v3_11-13-2019.csv"),
+    os.path.join("Dataset", "HXPC13_DI_v3_11-13-2019.csv"),
+    os.path.join(BASE_DIR, "Dataset", "Cleaned Data", "cleaned_course_enrollments.csv"),
+]
+
+data_path = next((p for p in CANDIDATE_PATHS if os.path.exists(p)), None)
+if not data_path:
+    raise FileNotFoundError("Could not find the dataset in Dataset/Raw Data/ or Dataset/.")
+
 df = pd.read_csv(data_path, low_memory=False)
 
 # Let's test two transaction definitions:
