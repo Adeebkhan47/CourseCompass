@@ -74,7 +74,7 @@ def plot_association_graph(
         ax.axis('off')
         return fig
 
-    # Layout using circular or spring layout for clarity
+    
     pos = nx.spring_layout(G, seed=42, k=1.8, iterations=60)
 
     # Draw nodes
@@ -108,7 +108,7 @@ def plot_association_graph(
         alpha=0.9
     )
 
-    # Draw labels with clean wrapping
+    #
     labels = {}
     for n in G.nodes():
         # Shorten label for neat display

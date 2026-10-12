@@ -1,11 +1,5 @@
 # CourseCompass: Association Rule Mining–Based Course Recommendation System
-## Applied Machine Learning (AI3002) — Assignment #01 Technical Report
-**Institution:** National University of Computer & Emerging Sciences (FAST-NUCES)  
-**Program:** BS Software Engineering | Semester 7 (Fall 2026)  
-**Instructor:** Shoaib Khan  
-**Target CLO:** CLO 1  
-
----
+## Applied Machine Learning  — Assignment #01 Technical Report  
 
 ## 1. Introduction and Problem Statement
 In higher education and Massive Open Online Courses (MOOCs), learners frequently navigate vast course catalogs without personalized pedagogical guidance. While typical e-commerce recommendation engines employ black-box matrix factorization or deep collaborative filtering, educational recommendation systems demand high transparency, determinism, and explainability. An educational recommendation is far more actionable when a student understands *why* a particular course is suggested (e.g., *"Learners who took Classical Greek Literature also studied Justice with 66.9% co-enrollment rate"*).
